@@ -19,6 +19,7 @@
 	<header>
         <img src="images/logo1x.png" alt="logo">
 		<span>Design Thinking</span>
+        <button id="theButton"></button>
 	</header>
 </div><!-- end header wrapper -->
 
@@ -26,11 +27,24 @@
     
 <div id="navWrapper">
     <nav>
-        <ul>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Services</a></li>
-            <li class="active"><a href="#">Best Practices</a></li>
-            <li><a href="#">Our Team</a></li>
+        <ul id="theNav">
+            <li class="parent"><a href="#">Services</a>
+            <ul>
+                <li><a href="#">Grass Cutting</a></li>
+                <li><a href="#">Junk Removal</a></li>
+                <li><a href="#">Mulch and Bark</a></li>
+                <li><a href="#">Tree Trimming</a></li>
+            </ul>
+            </li>
+            <li class="active"><a href="#">Blog</a></li>
+            <li class="parent"><a href="#">Our Team</a>
+            <ul>
+                <li><a href="#">Peter</a></li>
+                <li><a href="#">Reggie</a></li>
+                <li><a href="#">Samantha</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Locations</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
@@ -58,6 +72,6 @@
             <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Clients</a></p>
     </footer>
 </div> <!-- end footer wrapper -->
-   
+<script src="js/scripts.js"></script>
 </body>
 </html> 
