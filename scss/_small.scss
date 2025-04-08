@@ -52,22 +52,62 @@ header {
 
 
 /* --------------------------- MAIN --------------------------- */
+
 main {
     h1 {
         padding: 1rem $gutter.5rem $gutter;
         font-size: 1.5rem;
         color: $secondaryColor;
-        font-weight: $lightWeight
+        font-weight: $lightWeight;
+        text-align: center;
     }
     p {
         padding: .5rem $gutter;
         color: #333;
         line-height: $leading;
     }
+    h2 {
+        text-align: center;
+    }
+
 }// end main
+.swiper, .swiper img {
+    width: 100%;
+    height: auto;
+  }
 
+div.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    section {
+        padding: 7px;
+        img {
+            width: 100%;
+            height: auto;
+            clip-path: circle(50% at 50% 50%);
+            transition: transform 1s;
+            &:hover {transform: rotate(15deg);}
+        }
+    } //end of section
+} // end of parent
 
-
+div.group {
+    display: grid;
+    padding: 5px;
+    gap: 4px;
+    section {
+        position: relative;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        img:last-child {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
     background-color: $primaryColor
@@ -81,3 +121,4 @@ footer {
     line-height: $leading;
     a {color: $greyColor;}
 }// end footer
+

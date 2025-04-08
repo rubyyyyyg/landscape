@@ -6,19 +6,27 @@
 	<title>Navigation Example</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+<!--favicon-->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 
 <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 </head>
 
 <body>
 <div id="headerWrapper">
 	<header>
-        <img src="images/logo1x.png" alt="logo">
-		<span>Design Thinking</span>
+        <a href="#"><img src="logo/logo1x.png" alt="Picture of logo" width="50" height="50" srcset="logo/logo1x.png 1x, logo/logo2x.png 2x, logo/logo3x.png 3x"></a>
+		<span>Ranger's Landscaping</span>
         <button id="theButton"></button>
 	</header>
 </div><!-- end header wrapper -->
@@ -50,21 +58,101 @@
     </nav>
 </div> <!-- end nav wrapper -->
 
-<div id="mainWrapper">
+
     <main>
 
-        <h1>Best Practices</h1>
+        <h1>Ranger's Landscaping</h1>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <pictue>
+            <source srcset="images/slideA-small.webp" media="(max-width: 400px)">
+            <source srcset="images/slideA-med.webp" media="(max-width: 800px)">
+            <img src="images/slideA-large.webp" alt="sliderA" width="2" height="1">
+        </pictue>
+      </div>
+
+      <div class="swiper-slide">  
+        <pictue>
+        <source srcset="images/slideB-small.webp" media="(max-width: 400px)">
+        <source srcset="images/slideB-med.webp" media="(max-width: 800px)">
+        <img src="images/slideB-large.webp" alt="sliderB" width="2" height="1">
+        </pictue>
+    </div>
+
+    <div class="swiper-slide">  
+        <pictue>
+        <source srcset="images/slideC-small.webp" media="(max-width: 400px)">
+        <source srcset="images/slideC-med.webp" media="(max-width: 800px)">
+        <img src="images/slideC-large.webp" alt="sliderC" width="2" height="1">
+        </pictue>
+    </div>
+
+    <div class="swiper-slide">  
+        <pictue>
+        <source srcset="images/slideD-small.webp" media="(max-width: 400px)">
+        <source srcset="images/slideD-med.webp" media="(max-width: 800px)">
+        <img src="images/slideD-large.webp" alt="sliderD" width="2" height="1">
+        </pictue>
+    </div>
+
+      
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+  
+  </div>
    
-        <p>Competently myocardinate cross-media infomediaries via end-to-end architectures. Enthusiastically implement end-to-end functionalities vis-a-vis excellent strategic theme areas. Conveniently supply enterprise action items with integrated innovation. Authoritatively cultivate sustainable portals for orthogonal core competencies. Distinctively coordinate team driven portals rather than synergistic processes.</p>
+        <p>At Ranger's Landscaping, we specialize in creating beautiful, sustainable outdoor spaces that enhance the beauty and functionality of your property. From lawn care and maintenance to custom landscaping designs, our team is dedicated to providing high-quality services tailored to your unique needs. Whether you're looking to refresh your garden, install hardscaping features, or maintain a lush, green lawn, we bring expertise, creativity, and attention to detail to every project.</p>
 
-        <p>Appropriately simplify enterprise information via leveraged total linkage. Progressively grow installed base infrastructures without open-source technologies. Distinctively embrace mission-critical internal or "organic" sources after competitive imperatives. Professionally whiteboard state of the art models through high-payoff expertise. Authoritatively exploit transparent users through virtual channels.</p>
+        <h1>Services</h1>
+        <div class="group">
+            <section>
+                <h2>Grass Cutting</h2>
+                <img src="images/1grasscutting.webp" width="400" height="250" alt="grass cutting">
+                <img src="images/grassMaskdone.png" width="400" height="70" alt="mask">
+            </section>
 
-        <p>Interactively transition user-centric web services without scalable collaboration and idea-sharing. Holisticly restore next-generation data before seamless expertise. Monotonectally grow synergistic synergy without bricks-and-clicks ROI. Uniquely optimize 24/365 convergence after integrated synergy. Distinctively synthesize high-quality methodologies for performance based bandwidth.</p>
+            <section>
+                <h2>Junk Removal</h2>
+                <img src="images/2junk.jpg" width="400" height="250" alt="junk removal">
+                <img src="images/waveMaskdone.png" width="400" height="70" alt="mask">
+            </section>
 
-     
+            <section>
+                <h2>Mulch and Bark</h2>
+                <img src="images/3mulch.jpg" width="400" height="250" alt="Mulch and Bark">
+                <img src="images/grassMaskdone.png" width="400" height="70" alt="mask">
+            </section>
+
+            <section>
+                <h2>Tree Trimming</h2>
+                <img src="images/4tree.jpg" width="400" height="250" alt="Tree Trimming">
+                <img src="images/waveMaskdone.png" width="400" height="70" alt="mask">
+            </section>
+        </div>
+
+
+       <h1>Customers Say</h1>
+
+       <div class="parent">
+        <section>
+            <img src="images/profile-1.jpg" width="200" height="200" alt="Customer One">
+            <p>"Ranger's transformed our yard into a beautiful, well-designed space with exceptional service, attention to detail, and professionalism, leaving us thrilled with the results and eager to use them again for future projects."</p>
+        </section>
+        <section>
+            <img src="images/profile-2.jpg" width="200" height="200" alt="Customer One">
+            <p>"They worked efficiently, ensuring every detail was perfect. The transformation is amazing, and I’ve already received plenty of compliments. I highly recommend Ranger's Landscaping for anyone looking for top-quality landscaping!"</p>
+        </section>
+       </div>
+       
+    
 
     </main>
-</div><!-- end main wrapper -->
     
 <div id="footerWrapper">
     <footer>
@@ -72,6 +160,7 @@
             <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Clients</a></p>
     </footer>
 </div> <!-- end footer wrapper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html> 

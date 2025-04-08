@@ -315,7 +315,7 @@ html {
 
 /* --------------------------- BODY --------------------------- */
 body {
-  font-family: "Spline Sans", sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
   font-weight: 300;
   min-width: 320px;
 }
@@ -335,7 +335,7 @@ header {
 header span {
   font-size: 1.6rem;
   font-weight: 300;
-  color: #1d295f;
+  color: #6a7a5a;
 }
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
@@ -343,18 +343,62 @@ header span {
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
   font-size: 1.5rem;
-  color: #7c1d47;
+  color: #8daf9b;
   font-weight: 300;
+  text-align: center;
 }
 main p {
   padding: 0.5rem 10px;
   color: #333;
   line-height: 150%;
 }
+main h2 {
+  text-align: center;
+}
+
+.swiper, .swiper img {
+  width: 100%;
+  height: auto;
+}
+
+div.parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+div.parent section {
+  padding: 7px;
+}
+div.parent section img {
+  width: 100%;
+  height: auto;
+  clip-path: circle(50% at 50% 50%);
+  transition: transform 1s;
+}
+div.parent section img:hover {
+  transform: rotate(15deg);
+}
+
+div.group {
+  display: grid;
+  padding: 5px;
+  gap: 4px;
+}
+div.group section {
+  position: relative;
+}
+div.group section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+div.group section img:last-child {
+  position: absolute;
+  bottom: 0;
+}
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: #1d295f;
+  background-color: #6a7a5a;
 }
 
 footer {
@@ -387,7 +431,7 @@ footer a {
   }
   /*the nav*/
   #theNav {
-    background-color: #3990c3;
+    background-color: #d7cbb2;
     height: 0;
     overflow: hidden;
     list-style-type: none;
@@ -403,7 +447,7 @@ footer a {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
   }
   #theNav li.active a {
-    background-color: #7c1d47;
+    background-color: #8daf9b;
   }
   #theNav li a :hover {
     background-color: rgba(0, 0, 0, 0.3);
@@ -420,7 +464,7 @@ footer a {
   .parent ul {
     list-style-type: none;
     padding: 0;
-    background-color: #1d295f;
+    background-color: #6a7a5a;
     display: none;
   }
   .parent:hover ul {
@@ -433,7 +477,7 @@ footer a {
     display: none;
   }
   #theNav {
-    background-color: #3990c3;
+    background-color: #d7cbb2;
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -457,10 +501,10 @@ footer a {
     color: rgba(255, 255, 255, 0.5);
   }
   #theNav li.active a {
-    background-color: #7c1d47;
+    background-color: #8daf9b;
   }
   #theNav li ul {
-    background-color: #1d295f;
+    background-color: #6a7a5a;
     list-style-type: none;
     padding: 0;
     position: absolute;
@@ -472,6 +516,16 @@ footer a {
   #theNav li:hover ul {
     left: auto;
   }
+  div.parent section {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 140px auto;
+    column-gap: 4px;
+  }
+  div.group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media only screen and (min-width: 64rem) {
   header, nav, main {
@@ -479,4 +533,12 @@ footer a {
     margin: auto;
   }
   /* NAVIGATION STUFF GOES HERE  */
+  div.parent section {
+    grid-template-columns: 200px auto;
+    column-gap: 8px;
+  }
+  div.group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
