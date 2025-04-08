@@ -343,7 +343,7 @@ header span {
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
   font-size: 1.5rem;
-  color: #8daf9b;
+  color: #7d9b89;
   font-weight: 300;
   text-align: center;
 }
@@ -431,7 +431,7 @@ footer a {
   }
   /*the nav*/
   #theNav {
-    background-color: #d7cbb2;
+    background-color: #b9ac90;
     height: 0;
     overflow: hidden;
     list-style-type: none;
@@ -447,7 +447,7 @@ footer a {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
   }
   #theNav li.active a {
-    background-color: #8daf9b;
+    background-color: #7d9b89;
   }
   #theNav li a :hover {
     background-color: rgba(0, 0, 0, 0.3);
@@ -477,7 +477,7 @@ footer a {
     display: none;
   }
   #theNav {
-    background-color: #d7cbb2;
+    background-color: #b9ac90;
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -501,7 +501,7 @@ footer a {
     color: rgba(255, 255, 255, 0.5);
   }
   #theNav li.active a {
-    background-color: #8daf9b;
+    background-color: #7d9b89;
   }
   #theNav li ul {
     background-color: #6a7a5a;
